@@ -597,6 +597,7 @@ struct namespace_t namespace_calendar = {
     {
         { &meth_acl,            &caldav_params },       /* ACL          */
         { NULL,                 NULL },                 /* BIND         */
+        { NULL,                 NULL },                 /* CONNECT      */
         { &meth_copy_move,      &caldav_params },       /* COPY         */
         { &meth_delete,         &caldav_params },       /* DELETE       */
         { &meth_get_head_cal,   &caldav_params },       /* GET          */
@@ -629,6 +630,7 @@ struct namespace_t namespace_freebusy = {
     {
         { NULL,                 NULL },                 /* ACL          */
         { NULL,                 NULL },                 /* BIND         */
+        { NULL,                 NULL },                 /* CONNECT      */
         { NULL,                 NULL },                 /* COPY         */
         { NULL,                 NULL },                 /* DELETE       */
         { &meth_get_head_fb,    &caldav_params },       /* GET          */
